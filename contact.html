@@ -29,6 +29,15 @@
             color: white;font-family: 'Kanit', sans-serif;font-size: 20px;
         }
     </style>
+    <script>
+      function submiting(){
+        window.alert("Pesan anda terkirim!");
+        document.getElementById("texttype_o").value="";
+        document.getElementById("texttype_t").value="";
+        document.getElementById("texttype_tr").value="";
+        document.getElementById("texttype_f").value="";
+      }
+    </script>
   </head>
   <body class="mt-5">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgb(255, 0, 0);">
@@ -70,20 +79,20 @@
           </div>
           <p>We'll write rarely, but only the best content.</p>
           <div class="md-form">
-            <label>Your name is: <input id="texttype" type="text" placeholder="what is your Name?" style="width: 400px;"></label>
+            <label>Your name is: <input id="texttype_o" type="text" placeholder="what is your Name?" style="width: 400px;"></label>
           </div>
           <div class="md-form">
-            <label>Your email is: <input id="texttype" type="text" placeholder="what is your Email?" style="width: 400px;"></label>
+            <label>Your email is: <input id="texttype_t" type="text" placeholder="what is your Email?" style="width: 400px;"></label>
           </div>
           <div class="md-form">
-            <label for="form-Subject">Subject<br><input id="texttype" type="text" placeholder="the subject is?" style="width: 500px;"></label>
+            <label for="form-Subject">Subject<br><input id="texttype_tr" type="text" placeholder="the subject is?" style="width: 500px;"></label>
            
           </div>
           <div class="md-form">
-            <label for="form-text">Send message<br><textarea id="texttype" cols="68" rows="5" placeholder="Whats up?"></textarea></label>
+            <label for="form-text">Send message<br><textarea id="texttype_f" cols="50" rows="5" placeholder="Whats up?"></textarea></label>
           </div>
           <div class="text-center">
-            <button id="submit">Submit</button>
+            <button id="submit" onclick="submiting()">Submit</button>
           </div>
         </div>
       </div>
