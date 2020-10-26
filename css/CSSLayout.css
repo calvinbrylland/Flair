@@ -107,7 +107,7 @@ od{
     width:100%;
     position:absolute;
   }
-#texttype{
+#texttype_t,#texttype_tr, #texttype_o, #texttype_f{
     margin: 8px 0;
     box-sizing: border-box;
     border: 2px solid rgb(71, 147, 218);
@@ -115,7 +115,7 @@ od{
     border-radius: 4px;
     color: black;
   }
-#texttype:focus{
+#texttype_t:focus,#texttype_tr:focus, #texttype_o:focus, #texttype_f:focus{
     background-color: rgba(31, 106, 192, 0.801);
   }
 ::placeholder{
